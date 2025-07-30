@@ -1,0 +1,98 @@
+/* src/components/TodoItem.css */
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.finished {
+  background-color: #e0f2f7; /* Lighter blue for finished todos */
+  border-color: #b3e5fc;
+  opacity: 0.8;
+}
+
+.todo-details {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.todo-text {
+  font-size: 1.3em;
+  margin: 0 0 5px 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.todo-item.finished .todo-text {
+  text-decoration: line-through;
+  color: #757575;
+}
+
+.todo-note {
+  font-size: 0.9em;
+  color: #616161;
+  margin: 0 0 8px 0;
+}
+
+.todo-status {
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.todo-item:not(.finished) .todo-status {
+  background-color: #ffecb3; /* Light orange for pending */
+  color: #fb8c00;
+}
+
+.todo-item.finished .todo-status {
+  background-color: #c8e6c9; /* Light green for finished */
+  color: #43a047;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.todo-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button {
+  background-color: #2196f3; /* Blue for edit */
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #1976d2;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red for delete */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}

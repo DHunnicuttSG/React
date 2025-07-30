@@ -1,0 +1,124 @@
+/* src/components/TodoForm.css */
+
+.todo-form {
+  background-color: #e8f5e9; /* Light green background */
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid #c8e6c9;
+}
+
+.todo-form h3 {
+  text-align: center;
+  color: #388e3c; /* Darker green heading */
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #424242;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: calc(100% - 24px); /* Account for padding */
+  padding: 12px;
+  border: 1px solid #bdbdbd;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  resize: vertical; /* Allow textarea to be resized vertically */
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  border-color: #4caf50; /* Green border on focus */
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25); /* Light green glow on focus */
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.checkbox-group label {
+  margin-bottom: 0; /* Override default label margin */
+  font-weight: normal;
+  color: #424242;
+  cursor: pointer;
+}
+
+.form-error {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 12px;
+  border: 1px solid #ef9a9a;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.todo-form button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-form button[type="submit"] {
+  background-color: #4caf50; /* Green for submit */
+  color: white;
+}
+
+.todo-form button[type="submit"]:hover:not(:disabled) {
+  background-color: #388e3c;
+  transform: translateY(-1px);
+}
+
+.todo-form button[type="submit"]:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.cancel-button {
+  background-color: #f44336; /* Red for cancel */
+  color: white;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}

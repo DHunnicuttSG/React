@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Day 4: React Router (Basic) (5 hours)
 Welcome back! Today, we're going to transform our static React applications into dynamic, multi-page experiences using React Router. This library is essential for building Single Page Applications (SPAs) where users can navigate between different "views" without full page reloads.
 

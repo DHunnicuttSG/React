@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Form, Button } from 'react-bootstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const EditUserForm = (props) => {
     const [user, setUser] = useState(props.currentUser)

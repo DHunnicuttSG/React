@@ -3,7 +3,7 @@ import UserTable from './tables/UserTable'
 import AddUserForm from './Forms/AddUserForm'
 import EditUserForm from './Forms/EditForm'
 import { Container, Row, Col } from 'react-bootstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 const App = (props) => {

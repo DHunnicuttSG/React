@@ -27,8 +27,8 @@ const increment = () => {setCount(count => count + 1);
   
 
 const doubleIncrement = () => {
-  setCount(prevCount => prevCount + 1);
-  setCount(prevCount => prevCount + 1); // Both will correctly increment by 1 each
+  setCount(myPrevCount => myPrevCount + 1);
+  setCount(myPrevCount => myPrevCount + 1); // Both will correctly increment by 1 each
 };
 
   return (

@@ -117,4 +117,19 @@ export default MyComponent
     * This is fine
 
 * Conditional Rendering Concepts
-    
+    * This is fine
+
+* Using conditional rendering
+    * LinkedIn learning module. This is fine. 
+
+* When to use if/else
+    * This is fine
+
+* Logical && Operator
+    * This is fine
+
+* Exercise: Loading Indicator
+    * This is fine
+
+* Wrap-up and Q&A
+    * This is fine
